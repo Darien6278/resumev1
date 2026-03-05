@@ -1,0 +1,94 @@
+/* Reseteo de espacios */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root{
+    --color-fondo: #63F3F8;
+    --color-pregunta: #0909C8;
+    --color-fondo-opcion: #27F59C;
+    --color-opcion: ;
+    --color-opcion-hover: ;
+    --tamaño-pregunta: 32px;
+    --tamaño-opcion: 28.8px;
+}
+
+/* fuente */
+
+body{
+    background-color: var(--color-fondo);
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+}
+
+.pregunta{
+    color: var(--color-pregunta);
+    font-size: var(--tamaño-pregunta);
+    margin: 8px 8px 40px;
+}
+
+.opcion{
+    background-color: var(--color-fondo-opcion);
+    color: var(--color-opcion);
+    margin: 8px;
+    padding: 10px;
+    font-size: var(--tamaño-opcion);
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover{
+        background-color: var(--color-pregunta);
+        color: var(--color-opcion-hover);
+    }
+}
+
+.CORRECTA::after{
+    content: '✅';
+    margin-left: 16px;
+}
+
+.INCORRECTA::after{
+    content: '❌';
+    margin-left: 16px;
+}
+
+@keyframes parpadeo{
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.CORRECTA, .INCORRECTA{
+    animation: parpadeo 0.3s ease-in-out 1;
+}
+
+.total{
+    color: var(--color-opcion);
+    text-align: center;
+    margin: 8px 8px 32px;
+    font-size: var(--tamaño-opcion);
+}
+
+.contenedor-boton{
+    text-align: center;
+}
+
+#reiniciarBtn{
+    background-color: var(--color-pregunta);
+    padding: 4px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: var(--tamaño-pregunta);
+    &:hover{
+        border: 1px solid var(--color-pregunta);
+        background-color: var(--color-fondo);
+        color: var(--color-pregunta);
+    }
+}
