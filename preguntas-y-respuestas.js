@@ -102,7 +102,7 @@ export const preguntasYRespuestas = {
                 "Solo por obligación escolar",
                 "Para aprender matemáticas"
             ],
-            "respuestaCorrecta": "Para comprender cómo se formó nuestra historia y cuidades"
+            "respuestaCorrecta": "Para comprender cómo se formó nuestra historia y ciudades"
         },
         {
             "pregunta": "¿Por qué algunos héroes históricos no son muy conocidos hoy?",
@@ -117,3 +117,4 @@ export const preguntasYRespuestas = {
     ]
 
 }
+
