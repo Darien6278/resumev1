@@ -98,7 +98,7 @@ export const preguntasYRespuestas = {
             "pregunta": "¿Por qué es importante recordar a personajes históricos como él?",
             "respuestas": [
                 "Para memorizar fechas únicamente",
-                "Para comprender cómo se formó nuestra historia y cuidades",
+                "Para comprender cómo se formó nuestra historia y ciudades",
                 "Solo por obligación escolar",
                 "Para aprender matemáticas"
             ],
@@ -115,4 +115,5 @@ export const preguntasYRespuestas = {
             "respuestaCorrecta": "Porque su historia no siempre se enseña mucho en la escuela"
         }
     ]
+
 }
